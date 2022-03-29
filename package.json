@@ -1,0 +1,45 @@
+{
+  "name": "api-challenge",
+  "version": "1.0.0",
+  "description": "Exercise for hiring process",
+  "main": "server.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "SET NODE_ENV=test mocha ./test --exit",
+    "test:watch": "SET NODE_ENV=test mocha --watch ./test ./ --file ./test/config/mocha.setup.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/userfront/api-challenge.git"
+  },
+  "keywords": [
+    "Userfront",
+    "test",
+    "challenge"
+  ],
+  "author": "Userfront",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/userfront/api-challenge/issues"
+  },
+  "homepage": "https://github.com/userfront/api-challenge#readme",
+  "dependencies": {
+    "@hapi/hapi": "^20.2.1",
+    "@hapi/joi": "^17.1.1",
+    "boom": "^7.3.0",
+    "dotenv": "^10.0.0",
+    "hapi-auth-jwt2": "^10.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.21",
+    "pg": "^8.7.1",
+    "sequelize": "^6.12.1"
+  },
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^9.1.3",
+    "sequelize-cli": "^6.3.0"
+  }
+}
